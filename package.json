@@ -4,14 +4,15 @@
   "description": "very first todos management using express and mongodb",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "precommit": "eslint .",
-    "build": "rimraf dist/ && babel ./ --out-dir dist/ --ignore ./node_modules,./.babelrc,./package.json,./npm-debug.log --copy-files",
-    "start": "node --exec babel-node app.js",
-    "dev": "nodemon --exec babel-node app.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
   "dependencies": {
     "cookie-parser": "^1.4.4",
     "express": "^4.16.4",
@@ -22,14 +23,6 @@
     "pug": "^2.0.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.4.0",
-    "@babel/node": "^7.2.2",
-    "@babel/preset-env": "^7.4.2",
-    "babel-cli": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
-    "eslint": "^5.16.0",
-    "eslint-config-node": "^4.0.0",
-    "husky": "^1.3.1",
     "lodash": "^4.17.11",
     "nodemon": "^1.18.10",
     "rimraf": "^2.6.3"
