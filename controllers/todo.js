@@ -35,14 +35,8 @@ module.exports = {
   },
 
   createNewTodo: (req, res) => {
-    const { name, content, isComplete, createdDate } = req.body
 
-    const todo = new todoModel({
-      name,
-      content,
-      isComplete,
-      createdDate,
-    })
+    const todo = new todoModel(req.body)
 
     todo.save((error, todo) => {
       if(error) {
